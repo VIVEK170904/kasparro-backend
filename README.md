@@ -2,27 +2,27 @@ Kasparro Backend API
 
 A production-ready FastAPI + PostgreSQL + Docker backend with pagination, filtering, aggregation, ETL readiness, and clean API documentation.
 
-📌 Features
+ Features
 
-✅ FastAPI REST API
+.FastAPI REST API
 
-✅ PostgreSQL database (Dockerized)
+.PostgreSQL database (Dockerized)
 
-✅ Health check endpoint
+.Health check endpoint
 
-✅ Paginated data retrieval
+.Paginated data retrieval
 
-✅ Price filtering (min / max)
+.Price filtering (min / max)
 
-✅ Aggregation stats endpoint
+.Aggregation stats endpoint
 
-✅ Swagger (OpenAPI) documentation
+.Swagger (OpenAPI) documentation
 
-✅ Environment-based configuration
+.Environment-based configuration
 
-✅ Docker & Docker Compose setup
+.Docker & Docker Compose setup
 
-✅ Ready for ETL ingestion & testing
+.Ready for ETL ingestion & testing
 
 🏗️ Tech Stack
 
@@ -96,7 +96,7 @@ Example
 
 /data?limit=10&offset=0&min_price=2000&max_price=50000
 
-📊 Stats Endpoint
+--Stats Endpoint
 GET /stats
 
 
@@ -109,7 +109,7 @@ Response
   "max_price": 75000
 }
 
-🧪 Testing (Optional)
+--Testing (Optional)
 
 Install dependencies locally:
 
@@ -120,7 +120,7 @@ Run tests:
 
 pytest
 
-📥 ETL Ingestion
+--ETL Ingestion
 
 ETL script can ingest CSV or external data into PostgreSQL.
 
@@ -128,7 +128,7 @@ Run inside container:
 
 docker exec -it kasparro-app python etl.py
 
-🔒 Best Practices Used
+--Best Practices Used
 
 Read-only SELECT queries
 
@@ -140,7 +140,7 @@ Response validation with Pydantic
 
 Docker-first workflow
 
-🎯 Future Enhancements
+--Future Enhancements
 
 Background ETL jobs
 
@@ -153,3 +153,4 @@ Alembic migrations
 CI/CD pipeline
 
 Caching (Redis)
+
